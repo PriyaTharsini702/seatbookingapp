@@ -1,0 +1,159 @@
+
+
+.signup_container {
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.signup_form_container {
+	width: 700px;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+	animation: glow 2s infinite;
+	transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.signup_form_container:hover {
+	transform: scale(1.03);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #6380e9;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.left h1 {
+	margin-top: 0;
+	color: white;
+	font-size: 30px;
+	align-self: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.right {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.form_container h1 {
+	font-size: 40px;
+	margin-top: 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.input {
+	outline: none;
+	border: none;
+	width: 350px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+.error_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+
+.white_btn:hover {
+	background-color: #ffff;
+	box-shadow: 0 0 15px rgba(247, 246, 246, 0.927)
+}
+
+.green_btn {
+	background-color: #6380e9;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	margin: 10px;
+	width: 350px;
+	margin-top: 20px;
+	transition: background-color 0.4s ease, box-shadow 0.4s ease;
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 40px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.white_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: white;
+	border-radius: 20px;
+	width: 120px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.4s ease, box-shadow 0.4s ease;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.green_btn:hover {
+	background-color: #ffff;
+	box-shadow: 0 0 10px rgba(103, 125, 222, 0.906);;
+}
+
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 5px 0 #3614f8;
+	}
+
+	50% {
+		box-shadow: 0 0 20px 0 #3614f8;
+	}
+
+	100% {
+		box-shadow: 0 0 5px 0 #3614f8;
+	}
+}
